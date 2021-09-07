@@ -203,6 +203,7 @@ p.spot_detail,
 p.food_name {
   font-size: 15px;
   line-height: 1.8;
+  width: 100%;
 }
 
 .font3 {
@@ -313,6 +314,11 @@ p.food_name {
     left: 7%;
   }
 
+  .spot_place, 
+  .food_place {
+    width: 95%;
+  }
+
   .spot_txt,
   .food_txt {
     width: 46%;
@@ -326,7 +332,7 @@ p.food_name {
 
   .spot_img img,
   .food_img img {
-    width: 22%;
+    width: 30%;
   }
 }
 
@@ -377,16 +383,12 @@ p.food_name {
 }
 
 .spot_list, .food_list {
-    width: 114%;
+    width: 100%;
     left: 4%;
 }
 
 .spot_img, .food_img {
     left: 6px;
-}
-
-.spot_img img, .food_img img {
-    width: 27%;
 }
 
 .spot_txt, .food_txt {
@@ -404,6 +406,10 @@ p.spot_detail, p.food_name {
     font-size: 12px;
     line-height: 1.8;
 }
+
+.food {
+  margin-bottom: 100px;
+}
 }
 
 
@@ -413,7 +419,11 @@ p.spot_detail, p.food_name {
 }
 
 .font2, .font3, .font4 {
-    font-size: 30px;
+    font-size: 20px;
+}
+
+.font3, .font4 {
+  margin: 20px 0;
 }
 
 .font2 span,
@@ -450,22 +460,75 @@ p.spot_detail, p.food_name {
     right: 5px;
 }
 
-.spot_list, .food_list {
-    width: 121%;
-    left: 1%;
+
+.neighborhood_map {
+    top: 327px;
 }
 
-.spot_txt, .food_txt {
-    width: 50%;
-    left: 140px;
+.spot, {
+  margin-bottom: 10px;
+  height: 1050px;
 }
 
-.spot_img, .food_img {
+.food {
+  height: 770px;
+  
+}
+
+.spot_list {
+    width: 95%;
+    left: 9px;
+}
+
+.food_list {
+  width: 95%;
+  left: 9px;
+  top: -200px;
+}
+
+.food_list h1 {
+    position: absolute;
+    top: -76px;
+    right: 23%;
+}
+
+.spot_txt, 
+.food_txt {
+    width: 52%;
+    left: 136px;
+}
+
+.spot_img, 
+.food_img {
     left: 4px;
 }
 
-.spot_place, .food_place {
+.spot_img img, 
+.food_img img {
+    width: 34%;
+}
+
+p.spot_name, 
+p.food_name {
+    font-size: 12px;
+    margin: 5px 0;
+}
+
+p.spot_detail, 
+p.food_name {
+    font-size: 11px;
+}
+
+.spot_link, 
+.food_link {
+    font-size: 10px;
+    padding: 2px;
+}
+
+.spot_place, 
+.food_place {
   height: 193px;
+  width: 100%;
 }
 
 .spot, .food {

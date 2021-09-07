@@ -107,7 +107,7 @@ footer {
 .footer_list {
   position: absolute;
   display: flex;
-  top: 55%;
+  top: 30%;
   left: 40%;
 }
 
@@ -138,7 +138,7 @@ footer {
   margin-right: 20px;
   position: absolute;
   top: 50%;
-  left: 70%;
+  left: 40%;
 }
 
 
@@ -183,7 +183,7 @@ header .logo {
   .footer_txt {
     bottom: 1%;
     font-size: 8px;
-    left: 33%;
+    left: 32%;
   }
 
   .footer_logo img {
@@ -283,11 +283,11 @@ body.nav-open header .drawer::after {
   }
 
   header .logo {
-    padding: 5px 0 0 5px;
+    padding: 0 0 0 5px;
   }
 
   header .logo img {
-    width: 30px;
+    width: 25px;
   }
 
   header .navbar ul {

@@ -2,19 +2,19 @@
 
 .about {
   margin: 0 auto;
-  margin-bottom: 200px;
+  margin-bottom: 100px;
   position: relative;
-  height: 1000px;
+  height: 800px;
 }
 
 .font2 {
   font-size: 50px;
   font-style: italic;
-  text-align: right;
+  text-align: left;
   position: absolute;
   width: 100%;
   top: 750px;
-  right: 150px;
+  left: -24px;
   margin: 50px 0;
   color: #949387;
   text-shadow: rgba(150,134,126,0.5) 2px 2px 2px;
@@ -24,11 +24,11 @@
   content: "";
   position: absolute;
   bottom: 0;
-  right: 0;
+  left: 0;
   width: 25%;
   height: 2px;
   margin: 0 auto;
-  text-align: right;
+  text-align: left;
   background-image: -webkit-linear-gradient(left, transparent, #7f7868 25%, #7f7868 75%, transparent);
   background-image:linear-gradient(to right, transparent, #7f7868 25%, #7f7868 75%, transparent);
   background-position: right;
@@ -43,24 +43,28 @@
 .about_bg img {
   opacity: 0.8;
   width: 100%;
-  top: -0.95%;
+  top: -1.1%;
   position: absolute;
 }
 
 .about_txt p {
   position: relative;
   top: 850px;
+  left: 400px;
 }
 
 .about_acc {
   margin-bottom: 150px;
+  height: 300px;
+  position: relative;
 }
 
 .about_acc_map {
   width: 60%;
   height: 350px;
-  -webkit-clip-path: polygon(50% 0, 100% 73%, 100% 100%, 0 100%, 0 0);
-  clip-path: polygon(50% 0, 100% 73%, 100% 100%, 0 100%, 0 0);
+  position: absolute;
+  right: -60px;
+  top: -60px;
 }
 
 .about_acc_map iframe {
@@ -70,8 +74,8 @@
 
 .about_acc_list {
   position: absolute;
-  top: 50%;
-  left: 70%;
+  top: 370px;
+  left: 40px;
   transform: translate(-20%, -110%);
 }
 
@@ -218,25 +222,14 @@
   top: 617px;
 }
 
-.about_acc_list {
-  top: -233px;
-  left: 70%;
-}
-
-.about_acc_map {
-  top: -395px;
-  position: relative;
-}
-.about_acc {
-    margin-bottom: 100px;
-    height: 100px;
-}
-
-}
-
 @media screen and (max-width: 768px) {
 .about_bg img {
-    top: 2%;  
+    top: 3%;  
+}
+
+.about {
+  height: 550px;
+  margin-bottom: 50px;
 }
 
 header .logo img {
@@ -257,8 +250,16 @@ header .logo img {
   }
 
 .about_txt p {
-    top: 370px;
-    left: -10px;
+    top: 360px;
+    left: 180px;
+    width: 64%;
+    margin: 0;
+    font-size: 10px;
+  }
+
+.about_acc {
+  height: 500px;
+  margin-bottom: 100px;
 }
 
 .about_acc_title {
@@ -271,19 +272,23 @@ header .logo img {
     height: 100%;
 }    
 
+.about_acc_txt {
+  font-size: 12px;
+}
 
 .about_acc_list {
-    top: -444px;
-    left: 32%;
+    top: -21px;
+    left: 62px;
     display: block;
     width: 100%;
 }
 
 .about_acc_map {
-    top: -163px;
+    top: 243px;
+    left: 37px;
     position: relative;
     clip-path: unset;
-    width: 100%;
+    width: 80%;
     height: 300px;
 }
 
@@ -301,6 +306,9 @@ header .logo img {
 }
 
 @media screen and (max-width: 480px) {
+.about_bg img {
+    top: 4%;
+}
 
 header .logo {
   padding: 0px 0 0 5px;
@@ -308,13 +316,13 @@ header .logo {
 
 
 .font2 {
-   right: -23px;
-   top: 179px;
-   font-size: 30px;
+   right: -20px;
+   top: 285px;
+   font-size: 20px;
 }
 
 .font3 {
-   font-size: 30px;
+   font-size: 20px;
 }
 
  .font2 span, .font3 span {
@@ -325,13 +333,18 @@ header .logo {
   width: 45%;
   }
 
+.about {
+  height: 400px;
+}
+
 .about_txt p {
-    top: 300px;
-    left: 7px;
+    top: 235px;
+    left: 12px;
+    width: 100%;
 }
 
 .about_acc_list {
-    top: -600px;
+    top: 176px;
     left: 22%;
 }
 
@@ -344,15 +357,17 @@ header .logo {
 }    
 
 .about_acc_map {
-    top: -311px;
+    top: 343px;
+    left: 0;
+    width: 100%;
+    height: 200px;
 }
 
-.about_acc {
-    margin-bottom: 0;
-}    
+
 
 .faq {
   height: 600px;
+  padding-top: 1px;
 }
 
 .faq .txt {
