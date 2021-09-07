@@ -1,0 +1,111 @@
+@charset "UTF-8";
+
+.top {
+  width: 100%;
+  height: 100vh;
+  margin-bottom: 100px;
+  position: relative;
+}
+
+.top_bg {
+  margin: 20px;
+  text-align: center;
+}
+
+.top_img img {
+  width: 80%;
+  background-size: cover;
+}
+
+.greetings {
+  position: relative;
+  background: linear-gradient(#949387 80%, transparent);
+  padding: 80px 0;
+  margin-bottom: 200px;
+}
+
+
+.greet_txt {
+  width: 70%;
+  text-align: left;
+  margin-left: 15%;
+}
+
+.greetings .inner {
+  background: rgba(255, 255, 255, 0.7);
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.font1 strong {
+  background: linear-gradient(transparent 60%, #96867E);
+}
+
+
+/*レスポンシブ*/
+@media screen and (max-width: 1024px) {
+  .top {
+    height: unset;
+  }
+
+  .footer_txt {
+    left: 71%;
+  }
+
+.footer_list {
+    top: 22%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  header .navbar ul li {
+    margin: 5px;
+    padding-right: 10px;
+  }
+
+  header .navbar ul li a {
+    font-size: 15px;
+
+  header .sns img {
+    padding-right: 5px;
+  }
+
+  header .logo {
+    padding: 5px 0 0 5px;
+  }
+
+  header .logo img {
+    width: 40px;
+  }
+
+  .font1 {
+    font-size: 17px;
+  }
+
+  .greetings {
+    margin-bottom: 30px;
+  }
+}
+
+
+
+@media screen and (max-width: 480px) {
+  .greetings .inner {
+    padding: 32px;
+  }
+
+  .greet_txt {
+    width: 100%;
+    margin-left: 2%;
+  }
+
+  header .navbar ul li a {
+    font-size: 10px;
+  }
+
+  .greetings {
+    margin-bottom: 30px;
+  }
+
+}

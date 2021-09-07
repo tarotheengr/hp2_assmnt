@@ -1,0 +1,324 @@
+@charset "UTF-8";
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  line-height: 1.8;
+  letter-spacing: 1px;
+  word-break: break-all;
+  color: #6D655B;
+}
+
+a {
+  text-decoration: none;
+  color: #6D655B;
+}
+
+li {
+  list-style: none;
+}
+
+header {
+  width: 100%;
+  display: inline-block;
+  background: #96867E;
+}
+
+header .logo {
+  position: absolute;
+  padding: 10px 0 0 20px;
+  z-index: 2;
+}
+
+header .logo img {
+  width: 50px;
+  z-index: 2;
+}
+
+
+header .navbar ul {
+  display: flex;
+  float: right;
+  position: relative;
+  margin: 15px 0;
+}
+
+header .navbar ul li {
+  margin: 10px;
+  padding-right: 20px;
+}
+
+header .navbar ul li a {
+  color: #DBCBB9;
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+header .navbar ul li a:hover {
+  color: #6F4A33;
+}
+
+header .respons {
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+header .drawer {
+  visibility: hidden;
+}
+
+header .sns {
+  margin: 18px 0;
+}
+
+header .sns img {
+  width: 20px;
+  padding-right: 10px;
+  z-index: 2;
+} 
+
+.font1 {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  margin-left: 15%;
+}
+
+.inner {
+  max-width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+
+footer {
+  padding: 30px 0 10px;
+  background: #96867E;
+  color: #DBCBB9;
+  position: relative;
+  height: 50px;
+}
+
+.footer_logo {
+  position: relative;
+}
+
+.footer_list {
+  position: absolute;
+  display: flex;
+  top: 55%;
+  left: 40%;
+}
+
+.footer_item {
+  padding-right: 20px;
+  margin-right: 20px;
+  border-right: solid 3px #6d655b;
+  font-size: 15px;
+  line-height: 1;
+}
+
+.footer_item a {
+  color: #DBCBB9;
+}
+
+.footer_item a:hover {
+  color: #6F4A33;
+}
+
+.footer_item:last-child {
+  padding-right: 0;
+  margin-right: 0;
+  border-right: none;
+}
+
+.footer_txt {
+  display: block;
+  margin-right: 20px;
+  position: absolute;
+  top: 50%;
+  left: 70%;
+}
+
+
+
+
+/*レスポンシブ*/
+@media screen and (max-width: 1024px) {
+
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 12px
+  }
+
+  .font1 {
+    font-size: 16px;
+    margin-left: 12%;
+  }
+header .logo {
+    position: absolute;
+    padding: 1px 0 0 10px;
+}
+
+  header .logo img {
+    width: 30px;
+  }
+
+  footer {
+   padding: 30px 0 10px;
+  }
+
+  .footer_list {
+    left: 30%;
+    top: 30%
+}
+
+  .footer_item {
+   font-size: 10px;
+}
+
+  .footer_txt {
+    bottom: 1%;
+    font-size: 8px;
+    left: 33%;
+  }
+
+  .footer_logo img {
+    width: 100px;
+  }
+
+/*ハンバーガーここから*/
+header .drawer {
+  visibility: visible;
+  width: 24px;
+  right: 10px;
+  top: 10px;
+  position: absolute;
+  border-top: solid 4px #6D655B;
+  cursor: pointer;
+  z-index: 100;
+}
+
+header .drawer::before, 
+header .drawer::after {
+  content: "";
+  display: block;
+  width: 24px;
+  background: #6D655B;
+  height: 4px;
+  position: absolute;
+  right: 0;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+header .drawer::before {
+  top: 6px;
+}
+
+header .drawer::after {
+  top: 15px;
+}
+
+header .navbar {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: none;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  background: #949387;
+}
+
+header .navbar ul {
+  display: block;
+  text-align: center;
+  float: none;
+  top: 20%;
+}
+
+header .navbar ul li {
+  width: 40%;
+  margin: 0 auto 20px;
+  padding-right: 0;
+  border-right: none;
+  border-bottom: solid 3px #7F7868;
+}
+
+header .navbar ul li a {
+  font-size: 20px;
+  line-height: 2;
+}
+
+header .respons {
+  visibility: visible;
+}
+
+body.nav-open header .drawer {
+  border-top: 0;
+}
+
+body.nav-open header .drawer::before {
+  top: 9px;
+  transform: rotate(-45deg);
+}
+
+body.nav-open header .drawer::after {
+  top: 9px;
+  transform: rotate(45deg);
+}
+
+/*ハンバーガーここまで*/
+
+}
+
+
+@media screen and (max-width: 480px) {
+  body {
+    font-size: 11px
+  }
+
+  header .logo {
+    padding: 5px 0 0 5px;
+  }
+
+  header .logo img {
+    width: 30px;
+  }
+
+  header .navbar ul {
+    margin: 0px 0;
+  }
+
+  .font1 {
+    font-size: 14px;
+    margin-left: 0%;
+  }
+
+  footer {
+   padding: 30px 0 10px;
+  }
+
+.footer_list {
+  left: 30%;
+  top: 30%
+}
+
+.footer_item {
+  font-size: 10px;
+}
+
+.footer_txt {
+  font-size: 8px;
+  bottom: 1%;
+  left: 30%;
+  }
+
+.footer_logo img {
+  width: 80px;
+}
+}
